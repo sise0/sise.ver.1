@@ -1,0 +1,112 @@
+/* ===== 블로그 디자인 =====
+   색깔이나 글씨 크기를 바꾸고 싶으면 아래 숫자/색상 코드를 바꿔보세요.
+   색상은 #뒤의 6자리 코드예요. 예) 검정 #222222, 파랑 #2a6df4 */
+
+:root {
+  --text: #2b2b2b;        /* 본문 글자색 */
+  --muted: #8a8a8a;       /* 날짜 등 흐린 글자색 */
+  --accent: #2a6df4;      /* 링크/강조 색 */
+  --line: #ececec;        /* 구분선 색 */
+  --bg: #ffffff;          /* 배경색 */
+  --max-width: 720px;     /* 글이 보이는 폭 */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic",
+               "맑은 고딕", Segoe UI, Roboto, sans-serif;
+  line-height: 1.75;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 상단 머리말 */
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 56px 20px 28px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.site-title {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+.site-description {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* 본문 영역 */
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 36px 20px 60px;
+}
+
+/* 글 목록 */
+.list-heading {
+  font-size: 16px;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+.post-list ul { list-style: none; margin: 0; padding: 0; }
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.post-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+}
+.post-link:hover { color: var(--accent); }
+.post-item-date { color: var(--muted); font-size: 14px; white-space: nowrap; }
+.empty { color: var(--muted); }
+
+/* 글 보기 */
+.post-title { font-size: 30px; margin: 0 0 6px; line-height: 1.3; }
+.post-date { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+.post-body h2 { margin-top: 40px; font-size: 22px; }
+.post-body img { max-width: 100%; height: auto; border-radius: 8px; }
+.post-body a { color: var(--accent); }
+.post-body blockquote {
+  margin: 24px 0;
+  padding: 4px 18px;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+}
+.post-body code {
+  background: #f4f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.back-link { margin-top: 48px; }
+.back-link a { color: var(--accent); text-decoration: none; }
+
+/* 바닥글 */
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}

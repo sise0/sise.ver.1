@@ -1,0 +1,5 @@
+# Jekyll이 자동으로 만드는 임시 파일들 (올릴 필요 없음)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/

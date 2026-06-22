@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section class="post-list">
+  <h2 class="list-heading">글 목록</h2>
+
+  {% if site.posts.size == 0 %}
+    <p class="empty">아직 쓴 글이 없어요. 첫 글을 써 보세요!</p>
+  {% endif %}
+
+  <ul>
+    {% for post in site.posts %}
+      <li class="post-item">
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-item-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
