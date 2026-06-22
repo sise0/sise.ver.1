@@ -1,18 +1,17 @@
 // ===================================================================
 //  Firebase 설정 파일
 // ===================================================================
-//  댓글 기능을 켜려면 여기에 내 Firebase 정보를 붙여넣어야 해요.
-//  방법은 "댓글-설정하기.md" 파일에 그림처럼 자세히 설명해 두었어요.
-//
-//  지금은 비어 있는 상태(예시값)라서, 블로그에는 "댓글 기능 준비 중"
-//  이라고 안내가 떠요. 아래 따옴표 안의 값들만 내 것으로 바꾸면 켜집니다.
+//  댓글 기능에 필요한 내 Firebase 연결 정보예요.
+//  (이 값들은 공개돼도 안전한 정보입니다. 진짜 보안은 Firestore 규칙이 담당해요.)
+//  설정 방법 전체는 "댓글-설정하기.md" 파일을 참고하세요.
 // ===================================================================
 
 export const firebaseConfig = {
-  apiKey: "여기에-내-apiKey-붙여넣기",
-  authDomain: "여기에-내-authDomain-붙여넣기",
-  projectId: "여기에-내-projectId-붙여넣기",
-  storageBucket: "여기에-내-storageBucket-붙여넣기",
-  messagingSenderId: "여기에-내-messagingSenderId-붙여넣기",
-  appId: "여기에-내-appId-붙여넣기"
+  apiKey: "AIzaSyAUFx4igLsusiE-d4pkzXnLtwO9ZENEq_g",
+  authDomain: "database-8b831.firebaseapp.com",
+  projectId: "database-8b831",
+  storageBucket: "database-8b831.firebasestorage.app",
+  messagingSenderId: "857196728041",
+  appId: "1:857196728041:web:7f4f78aea6d76fc312ea78",
+  measurementId: "G-JW1Y98YR86"
 };
