@@ -100,6 +100,64 @@ body {
 .back-link { margin-top: 48px; }
 .back-link a { color: var(--accent); text-decoration: none; }
 
+/* 댓글 */
+.comments {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8px 20px 40px;
+}
+.comments-heading {
+  font-size: 18px;
+  margin: 0 0 18px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.comment-list { list-style: none; margin: 0 0 28px; padding: 0; }
+.comment-loading { color: var(--muted); font-size: 15px; padding: 8px 0; }
+.comment-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.comment-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.comment-author { font-weight: 600; font-size: 15px; }
+.comment-when { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.comment-body { white-space: pre-wrap; word-break: break-word; font-size: 15px; }
+
+.comment-form { display: flex; flex-direction: column; gap: 10px; }
+.comment-name, .comment-text {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 15px;
+  background: #fafafa;
+}
+.comment-name { max-width: 220px; }
+.comment-text { resize: vertical; }
+.comment-name:focus, .comment-text:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: #fff;
+}
+.comment-submit {
+  align-self: flex-start;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.comment-submit:hover { opacity: 0.9; }
+.comment-status { color: var(--muted); font-size: 14px; margin: 4px 0 0; min-height: 1em; }
+
 /* 바닥글 */
 .site-footer {
   max-width: var(--max-width);

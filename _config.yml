@@ -21,3 +21,4 @@ permalink: /posts/:title/
 exclude:
   - README.md
   - 글쓰는-방법.md
+  - 댓글-설정하기.md
